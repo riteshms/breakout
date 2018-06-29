@@ -1,0 +1,4 @@
+// Microsoft Developer Studio generated Help ID include file.
+// Used by Bricks.rc
+//
+#define HIDC_SSTART                     0x806903f6    // IDD_START_MENU

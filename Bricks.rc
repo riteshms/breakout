@@ -1,0 +1,344 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+// Generated Help ID header file
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.hm"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_BRICKS              ICON    DISCARDABLE     "Bricks.ICO"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_BRICKS MENU DISCARDABLE 
+BEGIN
+    POPUP "&Play"
+    BEGIN
+        MENUITEM "&New",                        IDM_NEW
+        MENUITEM "Pa&use",                      IDM_PAUSE
+        MENUITEM "&Ball Speed",                 IDM_LEVEL
+        MENUITEM "E&xit",                       IDM_EXIT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Controls",                   IDM_CONTROLS
+        MENUITEM "&About ...",                  IDM_ABOUT
+        MENUITEM "",                            ID_HELP
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_BRICKS ACCELERATORS MOVEABLE PURE 
+BEGIN
+    "/",            IDM_ABOUT,              ASCII,  ALT, NOINVERT
+    "?",            IDM_ABOUT,              ASCII,  ALT, NOINVERT
+    VK_ESCAPE,      IDM_EXIT,               VIRTKEY, NOINVERT
+    VK_F2,          IDM_NEW,                VIRTKEY, NOINVERT
+    VK_F3,          IDM_PAUSE,              VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  22, 17, 230, 75
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "About"
+FONT 8, "System"
+BEGIN
+    LTEXT           "Bricks",IDC_STATIC,51,10,119,8,SS_NOPREFIX
+    DEFPUSHBUTTON   "OK",IDOK,193,9,30,11,WS_GROUP
+    LTEXT           " Developed by:\n Manas, Ritesh, Mayur, Ahmed, Rajat \n at NCST, Kharghar. \n This game was developed as a part \n of GUID Project. Nov '02.",
+                    IDC_STATIC,51,23,124,47,SS_SUNKEN
+    CONTROL         173,IDC_STATIC,"Static",SS_BITMAP,6,5,25,25
+END
+
+IDD_FLASH DIALOG DISCARDABLE  0, 0, 287, 262
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         136,IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    SS_SUNKEN,0,0,287,262
+END
+
+IDD_START_MENU DIALOGEX 0, 0, 700, 550
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "&Start",IDC_SSTART,276,207,130,30,WS_GROUP,
+                    WS_EX_DLGMODALFRAME | WS_EX_TRANSPARENT | 
+                    WS_EX_CLIENTEDGE | WS_EX_STATICEDGE,HIDC_SSTART
+    PUSHBUTTON      "S&peed",IDC_SSLIDER,276,242,130,31,WS_GROUP,
+                    WS_EX_DLGMODALFRAME | WS_EX_TRANSPARENT | 
+                    WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    PUSHBUTTON      "&Controls",IDC_SCONTROLS,276,278,130,31,WS_GROUP,
+                    WS_EX_DLGMODALFRAME | WS_EX_TRANSPARENT | 
+                    WS_EX_CLIENTEDGE
+    PUSHBUTTON      "&About",IDC_SABOUT,276,318,130,31,WS_GROUP,
+                    WS_EX_DLGMODALFRAME | WS_EX_TRANSPARENT | 
+                    WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    PUSHBUTTON      "E&xit",IDC_SEXIT,276,358,130,31,WS_GROUP,
+                    WS_EX_DLGMODALFRAME | WS_EX_TRANSPARENT | 
+                    WS_EX_CLIENTEDGE
+    CONTROL         161,IDC_STATIC,"Static",SS_BITMAP,0,0,683,473
+END
+
+IDD_CONTROLS DIALOG DISCARDABLE  0, 0, 339, 225
+STYLE DS_MODALFRAME | WS_CAPTION | WS_SYSMENU
+CAPTION "Controls"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           " Press Left Arrow Key  to Move Left",IDC_STATIC,103,14,
+                    130,11
+    LTEXT           "Press Right Arrow Key  to Move Right",IDC_STATIC,103,29,
+                    130,11
+    LTEXT           "       Press Space Bar  to Launch ",IDC_STATIC,103,44,
+                    130,11
+    DEFPUSHBUTTON   "OK",ID_COK,124,174,80,16
+    CONTROL         164,IDC_STATIC,"Static",SS_BITMAP,68,87,45,30
+    LTEXT           "Block",IDC_STATIC,253,141,57,16
+    CONTROL         165,IDC_STATIC,"Static",SS_BITMAP,67,130,45,30
+    LTEXT           "3 HITS",IDC_STATIC,255,97,57,18
+    LTEXT           "1 HIT",IDC_STATIC,133,98,33,15
+    LTEXT           "2 HITS",IDC_STATIC,134,140,24,8
+    CONTROL         166,IDC_STATIC,"Static",SS_BITMAP,193,88,45,30
+    CONTROL         167,IDC_STATIC,"Static",SS_BITMAP,194,130,45,30
+    LTEXT           "Press F3 To Pause",IDC_PAUSE,128,59,75,11
+    LTEXT           "Press Esc to Quit",IDC_PAUSE2,132,74,75,11
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_START_MENU, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 669
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 448
+    END
+
+    IDD_CONTROLS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 332
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 218
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "bmp00002.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_APP_TITLE           "Bricks"
+    IDS_HELLO               "Hello World!"
+    IDC_BRICKS              "BRICKS"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (Australia) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENA)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_AUS
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SPEED DIALOG DISCARDABLE  0, 0, 155, 146
+STYLE DS_MODALFRAME | WS_CAPTION | WS_SYSMENU
+CAPTION "Ball Speed"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,19,122,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,85,122,50,14
+    CONTROL         "Slow",IDC_BEG,"Button",BS_AUTORADIOBUTTON | WS_GROUP,54,
+                    35,41,10
+    CONTROL         "Medium",IDC_INTER,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,54,57,41,10
+    CONTROL         "Fast",IDC_EXP,"Button",BS_AUTORADIOBUTTON | WS_GROUP,54,
+                    79,41,9
+    GROUPBOX        "Ball Speed",IDC_LEVELS,28,16,99,87
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_FLASHPIC            BITMAP  DISCARDABLE     "flashpic.bmp"
+PADDLE                  BITMAP  DISCARDABLE     "paddle.bmp"
+BALL                    BITMAP  DISCARDABLE     "bmp00001.bmp"
+IDB_brk                 BITMAP  DISCARDABLE     "brk.bmp"
+IDB_Brk2                BITMAP  DISCARDABLE     "brk2.bmp"
+IDB_Brk3                BITMAP  DISCARDABLE     "brk3.bmp"
+IDB_Brk4                BITMAP  DISCARDABLE     "bitmap1.bmp"
+IDB_main                BITMAP  DISCARDABLE     "main.bmp"
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "0c0904b0"
+        BEGIN
+            VALUE "Comments", "Developed  By  RITESH, AHMED ,RAJAT, MANAS  & MAYUR\0"
+            VALUE "CompanyName", "NCST, Kharghar\0"
+            VALUE "FileDescription", "Bricks\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Bricks\0"
+            VALUE "LegalCopyright", "Copyright © 2002\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Bricks.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "GAME OF BRICKS\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0xc09, 1200
+    END
+END
+
+#endif    // !_MAC
+
+#endif    // English (Australia) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,39 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Bricks - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ritesh\LOCALS~1\Temp\RSP10F.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Debug/Bricks.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"F:\NCSTPROJ\GUID\Bricks Latest\Bricks.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ritesh\LOCALS~1\Temp\RSP10F.tmp" 
+Creating temporary file "C:\DOCUME~1\ritesh\LOCALS~1\Temp\RSP110.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib msimg32.lib winmm.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/Bricks.pdb" /debug /machine:I386 /out:"Debug/Bricks.exe" /pdbtype:sept 
+".\Debug\Bricks.obj"
+".\Debug\StdAfx.obj"
+".\Debug\Bricks.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ritesh\LOCALS~1\Temp\RSP110.tmp"
+<h3>Output Window</h3>
+Compiling...
+Bricks.cpp
+F:\NCSTPROJ\GUID\Bricks Latest\Bricks.cpp(163) : warning C4101: 'szHello' : unreferenced local variable
+F:\NCSTPROJ\GUID\Bricks Latest\Bricks.cpp(182) : warning C4101: 'szb' : unreferenced local variable
+F:\NCSTPROJ\GUID\Bricks Latest\Bricks.cpp(933) : warning C4101: 'sztemp' : unreferenced local variable
+F:\NCSTPROJ\GUID\Bricks Latest\Bricks.cpp(1026) : warning C4101: 'sztemp' : unreferenced local variable
+F:\NCSTPROJ\GUID\Bricks Latest\Bricks.cpp(897) : warning C4700: local variable 'temp' used without having been initialized
+Linking...
+
+
+
+<h3>Results</h3>
+Bricks.exe - 0 error(s), 5 warning(s)
+</pre>
+</body>
+</html>
